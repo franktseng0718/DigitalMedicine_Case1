@@ -42,5 +42,8 @@ Use textual train, Use intuitive test
 ![image](https://github.com/franktseng0718/DigitalMedicine_Case1/blob/master/Glove/Glove_result.PNG)
 # Summary
 ### Top Kaggle public leaderboard score :
-### LSTM
+### LSTM : 0.62
 ![image](https://github.com/nomiaro/DigitalMedicine_Case1/blob/master/LSTM/Experiment_Result.png)
+### Top Kaggle private leaderboard score :
+### SVM : 0.66
+![image](https://github.com/franktseng0718/DigitalMedicine_Case1/blob/master/nb_svm/SVM_Kaggle_result.PNG)
