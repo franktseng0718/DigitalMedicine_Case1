@@ -9,7 +9,7 @@ from collections import defaultdict
 from sklearn.preprocessing import LabelEncoder
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn import model_selection, naive_bayes, svm
-from sklearn.metrics import accuracy_score, f1_score
+from sklearn.metrics import precision_score, f1_score, recall_score
 from gensim.models.word2vec import Word2Vec
 def load():
     train_root = "../data/Train_Textual/"
@@ -55,11 +55,12 @@ def SVM(train_data_Tfidf, train_label, test_data_Tfidf, test_label):
     SVM.fit(train_data_Tfidf, train_label)
 
     pred = SVM.predict(test_data_Tfidf)
-    print("SVM accuracy:", accuracy_score(pred, test_label))
+    print("SVM precision:", precision_score(pred, test_label))
+    print("SVM recall:", recall_score(pred, test_label))
     print("SVM f1 score:", f1_score(pred, test_label))
 
 def training(texts, labels):
-    train_data, test_data, train_label, test_label = model_selection.train_test_split(texts, labels, test_size=0.1)
+    train_data, test_data, train_label, test_label = texts[:400], texts[400:800], labels[:400], labels[400:800]
     Encoder = LabelEncoder()
     train_label = Encoder.fit_transform(train_label)
     test_label =  Encoder.fit_transform(test_label)
@@ -67,7 +68,7 @@ def training(texts, labels):
     Tfidf_vect.fit(texts)
     train_data_Tfidf = Tfidf_vect.transform(train_data)
     test_data_Tfidf = Tfidf_vect.transform(test_data)
-    NB(train_data_Tfidf, train_label, test_data_Tfidf, test_label)
+    #NB(train_data_Tfidf, train_label, test_data_Tfidf, test_label)
     SVM(train_data_Tfidf, train_label, test_data_Tfidf, test_label)
 
 if __name__ == '__main__':
