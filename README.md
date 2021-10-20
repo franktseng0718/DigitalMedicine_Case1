@@ -40,7 +40,7 @@ Use textual train, Use intuitive test
 ![image](https://github.com/franktseng0718/DigitalMedicine_Case1/blob/master/doc2vec/doc2vec_result.PNG)
 ## SVM + Glove
 ![image](https://github.com/franktseng0718/DigitalMedicine_Case1/blob/master/Glove/Glove_result.PNG)
-# Experiment
-Kaggle public leaderboard score
+# Summary
+Top Kaggle public leaderboard score
 ## LSTM
 ![image](https://github.com/nomiaro/DigitalMedicine_Case1/blob/master/LSTM/Experiment_Result.png)
