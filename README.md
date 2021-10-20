@@ -30,9 +30,14 @@ Classify whether a pt is obese
 [LSTM](https://github.com/nomiaro/DigitalMedicine_Case1/blob/master/LSTM/README.md)
 # Experiment result
 ## Baseline
+![image](https://github.com/franktseng0718/DigitalMedicine_Case1/blob/master/baseline/baseline_result.PNG)
 ## svm + TFIDF
+![image]()
 ## svm + word2vec
+![image](https://github.com/franktseng0718/DigitalMedicine_Case1/blob/master/word2vec/Word2vec_result.PNG)
 ## svm + doc2vec
+![image](https://github.com/franktseng0718/DigitalMedicine_Case1/blob/master/doc2vec/doc2vec_result.PNG)
 ## svm + Glove
+![image](https://github.com/franktseng0718/DigitalMedicine_Case1/blob/master/Glove/Glove_result.PNG)
 ## LSTM
 ![image](https://github.com/nomiaro/DigitalMedicine_Case1/blob/master/LSTM/Experiment_Result.png)
