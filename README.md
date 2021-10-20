@@ -11,7 +11,8 @@ Classify whether a pt is obese
 	ipython -c "%run doc2vec.ipynb"
 ## run svm + Glove model
 	ipython -c "%run Glove.ipynb"
+## run LSTM
+[LSTM](https://github.com/nomiaro/DigitalMedicine_Case1/blob/master/LSTM/README.md)
 # Experiment result
-zzz
-
-			
+## LSTM
+![image](https://github.com/nomiaro/DigitalMedicine_Case1/blob/master/LSTM/Experiment_Result.png)
