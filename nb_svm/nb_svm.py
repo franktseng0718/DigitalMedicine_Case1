@@ -47,7 +47,7 @@ def NB(train_data_Tfidf, train_label, test_data_Tfidf, test_label):
     naive.fit(train_data_Tfidf, train_label)
 
     pred = naive.predict(test_data_Tfidf)
-    print("NB accuracy:", accuracy_score(pred, test_label))
+    #print("NB accuracy:", accuracy_score(pred, test_label))
     print("NB f1 score:", f1_score(pred, test_label))
 
 def SVM(train_data_Tfidf, train_label, test_data_Tfidf, test_label):
